@@ -1,4 +1,4 @@
-namespace Coffee.Data.Models {
+namespace Coffee.Data {
     public class SalesOrderItem {
         public int Id { get; set; } 
         public int Quantity { get; set; }

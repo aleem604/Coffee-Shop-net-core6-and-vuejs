@@ -1,4 +1,5 @@
 using Coffee.Data;
+using Coffee.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -12,6 +13,10 @@ builder.Services.AddDbContext<CoffeeDbContext>(opts => {
 	opts.UseNpgsql(builder.Configuration.GetConnectionString("solar.dev"));
 });
 
+builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddTransient<ICustomerService, CustomerService>();
+builder.Services.AddTransient<IInventoryService, InventoryService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

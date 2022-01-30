@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Coffee.Data.Models {
+namespace Coffee.Data {
     public class Product {
         public int Id { get; set; }
         public DateTime CreatedOn { get; set; }

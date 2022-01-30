@@ -1,6 +1,6 @@
 using System;
 
-namespace Coffee.Data.Models {
+namespace Coffee.Data {
     public class ProductInventorySnapshot {
         public int Id { get; set; }
         public DateTime SnapshotTime { get; set; }
