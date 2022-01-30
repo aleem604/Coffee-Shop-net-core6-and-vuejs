@@ -1,0 +1,5 @@
+﻿
+Add-Migration initial -Project "Coffee.Data" -StartupProject "Coffee.Web"
+
+
+Update-Database -Project "Coffee.Data" -StartupProject "Coffee.Web" -verbose
